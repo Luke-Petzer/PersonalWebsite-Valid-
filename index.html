@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Luke Petzer</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">LUKE PETZER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Luke Petzer</h1>
+                <p>Web Developer & Designer | Crafting modern, functional websites for businesses and individuals.</p>
+                <a href="#portfolio" class="btn btn-primary btn-lg">View Portfolio</a>
+            </div>
+        </div>
+
+        <section id="skills" class="skills-expertise">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-intro">With a diverse skill set and years of experience, I bring a comprehensive approach to
+                    web development and design.</p>
+        
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>HTML/CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                        <p>Crafting responsive and accessible web layouts with modern CSS techniques.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                        <p>Building interactive and dynamic web applications with vanilla JS and popular frameworks.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3>Databases</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                        <p>Designing and managing both SQL databases for optimal data storage and retrieval.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h3>Back-end Development</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                        <p>Creating robust server-side applications using ASP.NET Core.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt skill-icon"></i>
+                        <h3>Responsive Design</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%;"></div>
+                        </div>
+                        <p>Ensuring seamless user experiences across all devices and screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-intro">Here are some of my recent projects showcasing my skills and expertise.</p>
+        
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web-design">Web Design</button>
+                    <button class="filter-btn" data-filter="mobile-apps">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="e-commerce">E-commerce</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web-design">
+                        <img src="~/images/project1.jpg" alt="Project 1" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Project 1</h3>
+                            <p>A responsive e-commerce website built with ASP.NET Core.</p>
+                            <a href="#" class="btn btn-primary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="mobile-apps">
+                        <img src="~/images/project2.jpg" alt="Project 2" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Project 2</h3>
+                            <p>A custom CMS solution for a local business.</p>
+                            <a href="#" class="btn btn-primary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="e-commerce">
+                        <img src="~/images/project3.jpg" alt="Project 3" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Project 3</h3>
+                            <p>An interactive dashboard for data visualization.</p>
+                            <a href="#" class="btn btn-primary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web-design">
+                        <img src="~/images/project4.jpg" alt="Project 4" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Project 4</h3>
+                            <p>A mobile-first web application for event management.</p>
+                            <a href="#" class="btn btn-primary view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <p class="section-intro">I offer a range of web development services tailored to meet your specific needs
+                    and goals.</p>
+        
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-laptop-code service-icon"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom website development using modern technologies and best practices.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-mobile-alt service-icon"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Creating websites that look great and function flawlessly on all devices.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-server service-icon"></i>
+                        <h3>Backend Development</h3>
+                        <p>Robust server-side solutions using ASP.NET Core and SQL databases.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-search service-icon"></i>
+                        <h3>SEO Optimization</h3>
+                        <p>Improving your website's visibility and ranking in search engine results.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="~/images/About-me-image.jpg" alt="Luke Petzer" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="about-me-title">About Me</h2>
+                        <p>I'm Luke Petzer, a Web Developer passionate about building clean, functional websites.</p>
+                        <p>I specialise in helping small businesses and startups establish their online presence with simple yet
+                            effective web solutions.</p>
+                        <p>My focus is on user-friendly design, performance, and affordability. Want to work together?</p>
+                        <p>Check out my portfolio or contact me today!</p>
+                        <a href="#" class="btn btn-primary">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <div class="content">
+                <h2>"The only way to do great work is to love what you do."</h2>
+                <p>- Steve Jobs</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
