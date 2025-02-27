@@ -29,12 +29,10 @@ header {
 }
 
 /* Social Icons */
-.navbar-nav .nav-item:last-child {
-    margin-left: 15px;
-}
+
 
 .navbar-nav .nav-item:last-child .nav-link {
-    padding: 5px;
+
 }
 
 .navbar-nav .fab {
