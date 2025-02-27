@@ -1,6 +1,5 @@
 /* Header and Navigation Styles */
 
-
 /* Navigation */
 header {
     position: absolute;
@@ -13,24 +12,20 @@ header {
 .navbar {
     background-color: transparent;
     padding: 1rem 0;
-    transition: background-color 0.3s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 .navbar-brand, .nav-link {
-    color: white !important;
+    color: white;
     transition: color 0.3s ease;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-toggler {
-    border-color: white !important;
+    border-color: white;
 }
 
 /* Social Icons */
@@ -46,21 +41,40 @@ header {
     font-size: 1.2rem;
 }
 
-/* Scrolled state */
-.navbar.scrolled {
-    background-color: white !important;
+/* Scrolled state for home page */
+.home .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
-.navbar.scrolled .navbar-brand,
-.navbar.scrolled .nav-link {
-    color: #333 !important;
+.home .navbar.scrolled .navbar-brand,
+.home .navbar.scrolled .nav-link {
+    color: #333;
 }
 
-.navbar.scrolled .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+.home .navbar.scrolled .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar.scrolled .navbar-toggler {
-    border-color: #333 !important;
+.home .navbar.scrolled .navbar-toggler {
+    border-color: #333;
+}
+
+/* Styles for non-home pages */
+body:not(.home) .navbar {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+body:not(.home) .navbar-brand,
+body:not(.home) .nav-link {
+    color: white;
+}
+
+body:not(.home) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+body:not(.home) .navbar-toggler {
+    border-color: white;
 }

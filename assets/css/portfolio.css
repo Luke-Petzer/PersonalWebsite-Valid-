@@ -1,0 +1,58 @@
+.portfolio {
+    padding: 80px 0;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.portfolio-item {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.portfolio-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.portfolio-image {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-content {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.portfolio-content h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio-content p {
+    margin-bottom: 15px;
+}
