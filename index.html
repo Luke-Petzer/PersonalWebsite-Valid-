@@ -15,11 +15,10 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">LUKE PETZER</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" id="burger-menu-btn" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="navbarContent">
                     <ul class="navbar-nav flex-grow-1 justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME</a>
@@ -47,6 +46,15 @@
             </div>
         </nav>
     </header>
+
+    <div id="full-screen-menu" class="full-screen-menu">
+        <div class="menu-content">
+            <a href="index.html">HOME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </div>
 
 
     <main role="main">
@@ -106,6 +114,14 @@
                         <p>Ensuring seamless user experiences across all devices and screen sizes.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <div class="content">
+                <h2>"The only way to do great work is to love what you do."</h2>
+                <p>- Steve Jobs</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
             </div>
         </section>
 
@@ -211,14 +227,6 @@
             </div>
         </section>
 
-        <section class="parallax-section">
-            <div class="content">
-                <h2>"The only way to do great work is to love what you do."</h2>
-                <p>- Steve Jobs</p>
-                <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
-            </div>
-        </section>
-
     </main>
 
     <script src="/assets/js/navbar.js"></script>
@@ -226,5 +234,6 @@
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/site.js"></script>
     <script src="assets/js/mobile-optimizations.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>

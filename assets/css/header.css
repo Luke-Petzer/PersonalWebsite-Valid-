@@ -79,3 +79,43 @@ body:not(.home) .navbar-toggler-icon {
 body:not(.home) .navbar-toggler {
     border-color: white;
 }
+
+
+/* Full-screen menu styles */
+.full-screen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-content a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        display: none !important;
+    }
+}

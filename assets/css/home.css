@@ -138,10 +138,10 @@
 }
 
 /* Parallax Section */
+/* Parallax Section */
 .parallax-section {
     height: 50vh;
     background-image: url('/assets/images/banner-image-1.jpg');
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -165,16 +165,31 @@
 .parallax-section .content {
     position: relative;
     z-index: 1;
+    padding: 20px;
 }
 
 .parallax-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .parallax-section p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .parallax-section {
+        background-attachment: fixed;
+    }
+
+    .parallax-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .parallax-section p {
+        font-size: 1.25rem;
+    }
 }
 
 /* Skills & Expertise Section */
