@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Luke Petzer</title>
+    <link rel="stylesheet" href="/assets/css/about.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/navbar.css" />
@@ -49,27 +50,79 @@
     </header>
 
     <main role="main">
-        <section class="about-me">
+
+
+        <section class="about-section py-5">
             <div class="container">
-                <h1 class="section-title">About Me</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="assets/images/About-me-image.jpg" alt="Luke Petzer" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-6">
-                        <p>I'm Luke Petzer, a Web Developer passionate about building clean, functional websites.</p>
-                        <p>I specialise in helping small businesses and startups establish their online presence with simple yet effective web solutions.</p>
-                        <p>My focus is on user-friendly design, performance, and affordability.</p>
-                        <h2>My Skills</h2>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>ASP.NET Core</li>
-                            <li>Responsive Design</li>
-                            <li>Database Management</li>
-                        </ul>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center">
+                                <img src="assets/images/About-me-image.jpg" alt="Luke Petzer" class="about-image img-fluid rounded-circle mb-4">
+                            </div>
+                            <div class="col-lg-8">
+                                <h2 class="card-title mb-4">About Me</h2>
+                                <p class="lead mb-4">I'm Luke Petzer, a passionate Web Developer dedicated to crafting clean, functional, and user-friendly websites.</p>
+                                <!-- Rest of the content -->
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="skills-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">My Expertise</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-code fa-3x mb-3"></i>
+                            <h3>Web Development</h3>
+                            <p>HTML, CSS, JavaScript, ASP.NET Core</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                            <h3>Responsive Design</h3>
+                            <p>Mobile-first approach, Cross-browser compatibility</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-database fa-3x mb-3"></i>
+                            <h3>Database Management</h3>
+                            <p>SQL, NoSQL, Data modeling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Professional Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content js--fadeInLeft">
+                            <h3>Senior Web Developer</h3>
+                            <h4>TechCorp Solutions</h4>
+                            <span class="date">2018 - Present</span>
+                            <p>Led development of responsive web applications, improving user engagement by 40%.</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other experiences -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section text-center py-5">
+            <div class="container">
+                <h2 class="mb-4">Ready to start your project?</h2>
+                <p class="lead mb-4">Let's create something amazing together!</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
             </div>
         </section>
     </main>
