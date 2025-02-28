@@ -1,0 +1,329 @@
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('/assets/images/Hero-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    width: 100%;
+    max-width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .hero-content {
+        max-width: 600px;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn-lg {
+        font-size: 1.2rem;
+    }
+
+    /* Re-enable animation for larger screens */
+    .hero-section {
+        animation: heroBackground 30s infinite;
+    }
+
+    @keyframes heroBackground {
+        0%, 100% { background-image: url('/assets/images/Hero-1.jpg'); }
+        33% { background-image: url('/assets/images/Hero-2.jpg'); }
+        66% { background-image: url('/assets/images/Hero-3.jpg'); }
+    }
+}
+
+/* Additional responsive adjustments for other sections */
+@media (max-width: 767px) {
+    .skills-grid, .portfolio-grid, .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-intro {
+        font-size: 1rem;
+    }
+
+    .skill-card, .portfolio-item, .service-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #f8f9fa;
+}
+
+.about-me-title {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-me-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-me .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Parallax Section */
+.parallax-section {
+    height: 50vh;
+    background-image: url('/assets/images/banner-image-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.parallax-section .content {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.parallax-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Skills & Expertise Section */
+.skills-expertise {
+    background-color: #f8f9fa;
+}
+
+.skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.skill-card {
+    background-color: #ffffff;
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.skill-bar {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-level {
+    background-color: #007bff;
+    border-radius: 4px;
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+
+/* Services Section */
+.services {
+    background-color: #ffffff;
+}
+
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #f8f9fa;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-image {
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-overlay p {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+}
+
+/* Animation classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fade-in-delay:nth-child(1) { animation-delay: 0.1s; }
+.animate-fade-in-delay:nth-child(2) { animation-delay: 0.2s; }
+.animate-fade-in-delay:nth-child(3) { animation-delay: 0.3s; }
+.animate-fade-in-delay:nth-child(4) { animation-delay: 0.4s; }
+.animate-fade-in-delay:nth-child(5) { animation-delay: 0.5s; }
+.animate-fade-in-delay:nth-child(6) { animation-delay: 0.6s; }
