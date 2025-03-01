@@ -3,8 +3,12 @@ const portfolioData = {
         {
             title: "E-commerce Website",
             description: "A fully responsive e-commerce website built with modern web technologies.",
-            learned: "Improved my skills in React and Redux while implementing complex state management.",
-            image: "/assets/images/ecommerce-website.jpg"
+            learned: [
+                "Improved my skills in React and Redux",
+                "Implemented complex state management",
+                "Optimized performance for large product catalogs"
+            ],
+            image: "assets/images/website-project-1.png"
         },
         // Add more website projects here
     ],
@@ -12,7 +16,11 @@ const portfolioData = {
         {
             title: "Fitness Tracker App",
             description: "A mobile application for tracking workouts and nutrition.",
-            learned: "Gained experience in mobile app development using React Native and integrating with health APIs.",
+            learned: [
+                "Gained experience in mobile app development using React Native",
+                "Integrated with health APIs for comprehensive tracking",
+                "Implemented real-time data synchronization"
+            ],
             image: "/assets/images/fitness-app.jpg"
         },
         // Add more mobile app projects here
@@ -21,7 +29,11 @@ const portfolioData = {
         {
             title: "Machine Learning Project",
             description: "A project exploring natural language processing techniques.",
-            learned: "Deepened my understanding of NLP and machine learning algorithms.",
+            learned: [
+                "Deepened my understanding of NLP algorithms",
+                "Implemented and fine-tuned various machine learning models",
+                "Worked with large datasets and improved data preprocessing skills"
+            ],
             image: "/assets/images/ml-project.jpg"
         },
         // Add more projects here
@@ -34,7 +46,7 @@ function displayPortfolioItems(category) {
 
     portfolioData[category].forEach((item, index) => {
         const itemHtml = `
-            <div class="portfolio-item">
+            <div class="portfolio-item" style="opacity: 0; transform: translateY(20px);">
                 <div class="portfolio-image">
                     <img src="${item.image}" alt="${item.title}">
                 </div>
@@ -42,17 +54,31 @@ function displayPortfolioItems(category) {
                     <h2>${item.title}</h2>
                     <p>${item.description}</p>
                     <h3>What I Learned:</h3>
-                    <p>${item.learned}</p>
+                    <ul>
+                        ${item.learned.map(point => `<li>${point}</li>`).join('')}
+                    </ul>
                 </div>
             </div>
         `;
         portfolioItems.innerHTML += itemHtml;
     });
+
+    // Animate items
+    setTimeout(() => {
+        const items = document.querySelectorAll('.portfolio-item');
+        items.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+    }, 100);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
-    
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             filterButtons.forEach(btn => btn.classList.remove('active'));
