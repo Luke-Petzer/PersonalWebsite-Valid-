@@ -1,25 +1,35 @@
 /* Hero Section */
 .hero-section {
     height: 100vh;
-    background-image: url('/assets/images/Hero-1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    overflow: hidden;
 }
 
-.hero-section::before {
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: heroBackgroundImages 30s infinite;
+    animation: heroBackgroundImages 30s infinite;
+}
+
+.hero-background::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -29,6 +39,18 @@
     padding: 20px;
     width: 100%;
     max-width: 90%;
+}
+
+@-webkit-keyframes heroBackgroundImages {
+    0%, 100% { background-image: url('/assets/images/Hero-1.jpg'); }
+    33.33% { background-image: url('/assets/images/Hero-2.jpg'); }
+    66.66% { background-image: url('/assets/images/Hero-3.jpg'); }
+}
+
+@keyframes heroBackgroundImages {
+    0%, 100% { background-image: url('/assets/images/Hero-1.jpg'); }
+    33.33% { background-image: url('/assets/images/Hero-2.jpg'); }
+    66.66% { background-image: url('/assets/images/Hero-3.jpg'); }
 }
 
 .hero-content h1 {
@@ -72,16 +94,7 @@
         font-size: 1.2rem;
     }
 
-    /* Re-enable animation for larger screens */
-    .hero-section {
-        animation: heroBackground 30s infinite;
-    }
-
-    @keyframes heroBackground {
-        0%, 100% { background-image: url('/assets/images/Hero-1.jpg'); }
-        33% { background-image: url('/assets/images/Hero-2.jpg'); }
-        66% { background-image: url('/assets/images/Hero-3.jpg'); }
-    }
+    /* The hero-section animation is now defined in the main .hero-section class */
 }
 
 /* Additional responsive adjustments for other sections */
@@ -364,3 +377,28 @@
 .animate-fade-in-delay:nth-child(4) { animation-delay: 0.4s; }
 .animate-fade-in-delay:nth-child(5) { animation-delay: 0.5s; }
 .animate-fade-in-delay:nth-child(6) { animation-delay: 0.6s; }
+
+/* Add the new keyframes animations */
+@-webkit-keyframes heroBackgroundImages {
+    0%, 100% { background-image: url('/assets/images/Hero-1.jpg'); }
+    33% { background-image: url('/assets/images/Hero-2.jpg'); }
+    66% { background-image: url('/assets/images/Hero-3.jpg'); }
+}
+
+@keyframes heroBackgroundImages {
+    0%, 100% { background-image: url('/assets/images/Hero-1.jpg'); }
+    33% { background-image: url('/assets/images/Hero-2.jpg'); }
+    66% { background-image: url('/assets/images/Hero-3.jpg'); }
+}
+
+@-webkit-keyframes heroBackgroundPosition {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes heroBackgroundPosition {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

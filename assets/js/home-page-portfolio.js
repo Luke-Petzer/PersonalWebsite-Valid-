@@ -2,7 +2,7 @@ const featuredProjects = [
     {
         title: "Loruki Website",
         description: "A fully responsive e-commerce website built with modern web technologies.",
-        image: "/assets/images/website-project-1.png",
+        image: "/assets/images/website-project-1.jpg",
         link: "#",
         category: "web-design"
     },
