@@ -1,12 +1,12 @@
 const portfolioData = {
     websites: [
         {
-            title: "E-commerce Website",
-            description: "A fully responsive e-commerce website built with modern web technologies.",
+            title: "Loruki Website",
+            description: "A base website populated with base information showcasing my skills in layouts and basic CSS animations.",
             learned: [
-                "Improved my skills in React and Redux",
-                "Implemented complex state management",
-                "Optimized performance for large product catalogs"
+                "Improved my my understanding of layouts and responsive design",
+                "How to create a contact form linked to a google sheet",
+                "Using external fonts and icons"
             ],
             image: "assets/images/website-project-1.png"
         },
