@@ -67,8 +67,8 @@ function createFooter() {
                         <a href="https://www.instagram.com/luke_petzer?igsh=b3ZibWlzZDU3ZHli&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                    </div>
                 </div>
-            </div>
             <div class="footer-bottom">
                 <p>&copy; 2023 Luke Petzer. All rights reserved.</p>
             </div>
