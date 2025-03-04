@@ -8,7 +8,7 @@ const portfolioData = {
                 "How to create a contact form linked to a google sheet",
                 "Using external fonts and icons"
             ],
-            image: "/assets/images/website-project-1.png"
+            image: "/assets/images/website-project-1.jpg"
         },
         // Add more website projects here
     ],
