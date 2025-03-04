@@ -349,6 +349,18 @@
     background-color: #0056b3;
 }
 
+.coming-soon {
+    background-color: #f0f0f0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
     .portfolio-grid {
         grid-template-columns: 1fr;

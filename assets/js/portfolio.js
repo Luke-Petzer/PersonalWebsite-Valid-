@@ -21,7 +21,7 @@ const portfolioData = {
                 "Integrated with health APIs for comprehensive tracking",
                 "Implemented real-time data synchronization"
             ],
-            image: "/assets/images/fitness-app.jpg"
+            image: "coming-soon"
         },
         // Add more mobile app projects here
     ],
@@ -34,7 +34,7 @@ const portfolioData = {
                 "Implemented and fine-tuned various machine learning models",
                 "Worked with large datasets and improved data preprocessing skills"
             ],
-            image: "/assets/images/ml-project.jpg"
+            image: "coming-soon"
         },
         // Add more projects here
     ]
@@ -45,10 +45,13 @@ function displayPortfolioItems(category) {
     portfolioItems.innerHTML = '';
 
     portfolioData[category].forEach((item, index) => {
+        const imageHtml = item.image === "coming-soon" 
+            ? '<div class="coming-soon">Coming Soon</div>'
+            : `<img src="${item.image}" alt="${item.title}">`;
         const itemHtml = `
             <div class="portfolio-item" style="opacity: 0; transform: translateY(20px);">
                 <div class="portfolio-image">
-                    <img src="${item.image}" alt="${item.title}">
+                    ${imageHtml}
                 </div>
                 <div class="portfolio-content">
                     <h2>${item.title}</h2>

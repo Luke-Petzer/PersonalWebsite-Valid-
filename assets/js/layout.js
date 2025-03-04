@@ -44,10 +44,6 @@ function createFooter() {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>About Me</h3>
-                    <p>Luke Petzer is a passionate web developer dedicated to creating beautiful, functional websites for businesses and individuals.</p>
-                </div>
-                <div class="footer-section">
                     <h3>Contact Info</h3>
                     <p>Email: contact@lukepetzer.com</p>
                     <p>Phone: (067) 385-2286</p>
@@ -69,9 +65,6 @@ function createFooter() {
                     </div>
                     </div>
                 </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Luke Petzer. All rights reserved.</p>
-            </div>
         </div>
     `;
     document.body.appendChild(footer);
