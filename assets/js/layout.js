@@ -54,12 +54,17 @@ function createFooter() {
                     <p>Address: Cape Town, Western Cape, South Africa</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="portfolio.html">Portfolio</a></p>
-                    <p><a href="about.html">About Us</a></p>
-                    <p><a href="contact.html">Contact</a></p>
-                </div>
+                function createFooter() {
+                    // ...
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <p><a href="/">Home</a></p>
+                        <p><a href="/portfolio/">Portfolio</a></p>
+                        <p><a href="/about/">About Us</a></p>
+                        <p><a href="/contact/">Contact</a></p>
+                    </div>
+                    // ...
+                }
                 <div class="footer-section">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
