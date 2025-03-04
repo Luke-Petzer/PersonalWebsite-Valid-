@@ -10,25 +10,25 @@ function createHeader() {
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="navbarContent">
                     <ul class="navbar-nav flex-grow-1 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">HOME</a>
+                            <a class="nav-link" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/portfolio/">PORTFOLIO</a>
+                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about/">ABOUT ME</a>
+                            <a class="nav-link" href="about.html">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact/">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="nav-link" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/share/14yiyNvAqq/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="nav-link" href="https://www.facebook.com/share/14yiyNvAqq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/luke_petzer?igsh=b3ZibWlzZDU3ZHli&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link" href="https://www.instagram.com/luke_petzer?igsh=b3ZibWlzZDU3ZHli&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -54,23 +54,18 @@ function createFooter() {
                     <p>Address: Cape Town, Western Cape, South Africa</p>
                 </div>
                 <div class="footer-section">
-                function createFooter() {
-                    // ...
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <p><a href="/">Home</a></p>
-                        <p><a href="/portfolio/">Portfolio</a></p>
-                        <p><a href="/about/">About Us</a></p>
-                        <p><a href="/contact/">Contact</a></p>
-                    </div>
-                    // ...
-                }
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="portfolio.html">Portfolio</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
                 <div class="footer-section">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/share/14yiyNvAqq/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"  target="_blank"></i></a>
-                        <a href="https://www.instagram.com/luke_petzer?igsh=b3ZibWlzZDU3ZHli&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"  target="_blank"></i></a>
-                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/14yiyNvAqq/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/luke_petzer?igsh=b3ZibWlzZDU3ZHli&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -84,5 +79,5 @@ function createFooter() {
 
 document.addEventListener('DOMContentLoaded', () => {
     createHeader();
-    createFooter()
+    createFooter();
 });

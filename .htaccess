@@ -1,7 +1,33 @@
-# Enable rewrite engine//+
+# Enable rewrite engine
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME}.html -f//-
-RewriteRule ^([^/]+)/$ $1.html [L]//-
+
+# Set the base for rewrites to the root directory
+RewriteBase /
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Handle subdirectory index pages
+RewriteRule ^(contact|portfolio|about)/?$ /$1/index.html [L]
+
+# Rewrite rule to serve HTML files without the .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# If the requested resource doesn't exist, try finding it at the root
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ /$1 [L,R=301]
 //+
 # Set the base for rewrites to the root directory//+
 RewriteBase ///+
