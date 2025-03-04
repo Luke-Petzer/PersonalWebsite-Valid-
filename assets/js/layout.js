@@ -80,5 +80,5 @@ function createFooter() {
 
 document.addEventListener('DOMContentLoaded', () => {
     createHeader();
-    createFooter();
+    createFooter()
 });

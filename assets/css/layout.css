@@ -89,7 +89,7 @@ body:not(.home) .navbar-toggler {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(51, 51, 51, 0.95);
     z-index: 1000;
     overflow-y: auto;
 }
@@ -100,13 +100,14 @@ body:not(.home) .navbar-toggler {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 20px;
 }
 
 .menu-content a {
     color: white;
-    font-size: 1.5rem;
-    margin: 15px 0;
+    font-size: 24px;
     text-decoration: none;
+    margin: 15px 0;
     transition: color 0.3s ease;
 }
 
@@ -117,6 +118,10 @@ body:not(.home) .navbar-toggler {
 @media (max-width: 767px) {
     .navbar-collapse {
         display: none !important;
+    }
+
+    .burger-menu-btn {
+        display: block;
     }
 }
 
@@ -184,4 +189,90 @@ footer {
     .footer-content {
         flex-direction: column;
     }
+}
+
+/* Full-screen menu styles */
+.full-screen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.menu-content a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+    color: #007bff;
+}
+
+/* Burger Menu Styles */
+.burger-menu-btn {
+    display: none;
+    position: relative;
+    z-index: 1001;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.burger-menu-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Active state for burger menu */
+.burger-menu-btn.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu-btn.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.full-screen-menu.show {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .burger-menu-btn {
+        display: none;
+    }
+}
+
+.navbar-collapse {
+    display: none; /* Hide menu by default */
+}
+
+.navbar-collapse.show {
+    display: flex !important;
+    flex-direction: column;
 }
