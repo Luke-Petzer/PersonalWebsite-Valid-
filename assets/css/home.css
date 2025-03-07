@@ -252,6 +252,22 @@
     color: #007bff;
 }
 
+.skill-level-80 {
+    width: 80%;
+}
+
+.skill-level-85 {
+    width: 85%;
+}
+
+.skill-level-70 {
+    width: 70%;
+}
+
+.skill-level-65 {
+    width: 65%;
+}
+
 /* Portfolio Section */
 /* Portfolio Section */
 .portfolio {
@@ -359,6 +375,7 @@
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 20px;
 }
 
 @media (max-width: 768px) {
